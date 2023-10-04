@@ -1,0 +1,126 @@
+/* Fonts */
+@font-face {
+    font-family: "dicovery";
+    src: url("fonts/DISCOVERY.ttf") format("truetype");
+}
+
+.discovery {
+    font-family: dicovery;
+}
+
+@font-face {
+    font-family: "tillium";
+    src: url("fonts/Tiilium/TitilliumWeb-Light.ttf") format("truetype");
+}
+
+.tillium {
+    font-family: tillium;
+}
+
+@font-face {
+    font-family: "Anton";
+    src: url("fonts/Anton-Regular.ttf") format("truetype");
+}
+
+.Anton {
+    font-family: Anton;
+}
+
+.pf {
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+
+/* Fonts */
+
+/* Nav bar Hover */
+@media (min-width:992px) {
+    .y:hover {
+        background-color: rgba(130, 130, 130, 0.2);
+        box-shadow: 0px 0px 0px 1px rgba(130, 130, 130, 0.2);
+        border-radius: 5px;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+}
+
+/* Nav bar Hover */
+
+.card-bg {
+    background: rgb(255, 106, 106);
+    background: radial-gradient(circle, rgba(255, 106, 106, 1) 0%, rgba(59, 69, 131, 1) 100%);
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-element {
+    animation: rotate 3s linear infinite;
+}
+
+
+.cardx {
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.l-bg-cherry {
+    background: linear-gradient(to right, #493240, #f09) !important;
+    color: #fff;
+}
+
+.l-bg-blue-dark {
+    background: linear-gradient(to right, #373b44, #4286f4) !important;
+    color: #fff;
+}
+
+.l-bg-green-dark {
+    background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+    color: #fff;
+}
+
+.l-bg-orange-dark {
+    background: linear-gradient(to right, #a86008, #ffba56) !important;
+    color: #fff;
+}
+
+.cardx .cardx-statistic-3 .cardx-icon-large .fas,
+.cardx .cardx-statistic-3 .cardx-icon-large .far,
+.cardx .cardx-statistic-3 .cardx-icon-large .fab,
+.cardx .cardx-statistic-3 .cardx-icon-large .fal {
+    font-size: 110px;
+}
+
+.l-bg-cyan {
+    background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+    color: #fff;
+}
+
+.l-bg-green {
+    background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
+    color: #fff;
+}
+
+.l-bg-orange {
+    background: linear-gradient(to right, #f9900e, #ffba56) !important;
+    color: #fff;
+}
+
+.l-bg-cyan {
+    background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+    color: #fff;
+}
+
+

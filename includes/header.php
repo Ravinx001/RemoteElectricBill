@@ -14,21 +14,21 @@
                         <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-window-fullscreen"></i> Dashborad</a>
                     </li>
                     <li class="nav-item mx-3 y">
-                        <a class="nav-link" href="admin_panel_P.html"><i class="bi bi-diagram-2-fill"></i> Utilities</a>
+                        <a class="nav-link" href="#"><i class="bi bi-diagram-2-fill"></i> Utilities</a>
                     </li>
                     <li class="nav-item mx-3 y">
-                        <a class="nav-link" href="admin_panel_U.html"><i class="bi bi-currency-dollar"></i> Payments</a>
+                        <a class="nav-link" href="#"><i class="bi bi-currency-dollar"></i> Bills</a>
                     </li>
-                    <li class="nav-item dropdown mx-3 y">
+                    <li class="nav-item dropdown ms-5 y">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="letter-spacing: 1px;">
                             <i class="bi bi-person-badge"></i> Ravindu Amarasekara
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #585858;">
                             <li>
-                                <a class="dropdown-item" href="admin_panel_SignIn.html"><i class="bi bi-door-open-fill me-1"></i>Sign In</a>
+                                <a class="dropdown-item" href="#"><i class="bi bi-door-open-fill me-1"></i>Sign In</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="admin_panel_Register.html"><i class="bi bi-person-plus-fill me-1"></i>Register</a>
+                                <a class="dropdown-item" href="#"><i class="bi bi-person-plus-fill me-1"></i>Register</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">

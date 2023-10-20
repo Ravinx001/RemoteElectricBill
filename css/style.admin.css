@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
     font-family: "dicovery";
-    src: url("fonts/DISCOVERY.ttf") format("truetype");
+    src: url("../fonts/DISCOVERY.ttf") format("truetype");
 }
 
 .discovery {
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "tillium";
-    src: url("fonts/Tiilium/TitilliumWeb-Light.ttf") format("truetype");
+    src: url("../fonts/Tiilium/TitilliumWeb-Light.ttf") format("truetype");
 }
 
 .tillium {
@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: "Anton";
-    src: url("fonts/Anton-Regular.ttf") format("truetype");
+    src: url("../fonts/Anton-Regular.ttf") format("truetype");
 }
 
 .Anton {

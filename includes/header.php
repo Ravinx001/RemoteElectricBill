@@ -17,7 +17,7 @@
                         <a class="nav-link" href="admin_panel_P.html"><i class="bi bi-diagram-2-fill"></i> Utilities</a>
                     </li>
                     <li class="nav-item mx-3 y">
-                        <a class="nav-link" href="admin_panel_U.html"><i class="bi bi-people"></i> Payments</a>
+                        <a class="nav-link" href="admin_panel_U.html"><i class="bi bi-currency-dollar"></i> Payments</a>
                     </li>
                     <li class="nav-item dropdown mx-3 y">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="letter-spacing: 1px;">

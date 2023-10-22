@@ -25,17 +25,14 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #585858;">
                             <li>
-                                <a class="dropdown-item" href="#"><i class="bi bi-door-open-fill me-1"></i>Sign In</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="bi bi-person-plus-fill me-1"></i>Register</a>
+                                <a class="dropdown-item" href="#"><i class="bi bi-person-fill-gear me-1"></i>
+                                    Account Settings</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#"><i class="bi bi-person-fill-gear me-1"></i>
-                                    Account Settings</a>
+                                <a class="dropdown-item" href="#"><i class="bi bi-door-open-fill me-1"></i>Log out</a>
                             </li>
                         </ul>
                     </li>

@@ -6,7 +6,7 @@ $conn = new mysqli(
     "localhost",
     "root",
     "Ravi400500lak@",
-    "healthhub",
+    "electric_bill",
     "3306"
 );
 

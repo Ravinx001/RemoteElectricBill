@@ -15,8 +15,8 @@ function login() {
         if (r1.readyState == 4 && r1.status == 200) {
             var t1 = r1.responseText;
 
-            if (t1 == "PU1") {
-                alert("Profile Data Updated !");
+            if (t1 == "##01#88") {
+                
                 // Redirect to a Login page
                 window.location.href = "home.php";
 

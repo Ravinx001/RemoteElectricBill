@@ -1,56 +1,44 @@
 <?php
 
-session_start();
-
 require_once("db.php");
 
 $email = $_POST["email"];
 $pwd = $_POST["pwd"];
 $chbox = $_POST["chbox"];
 
-$stmt = $conn->prepare("SELECT * FROM `admin` WHERE email=? AND `password`=?");
-$stmt->bind_param("sss", $email, $pwd);
-$stmt->execute();
-$stmt->store_result();
-$n = $stmt->num_rows;
-$d = $stmt->fetch_assoc();
-$stmt->close();
-$conn->close();
+if (!empty($email) || !empty($pwd)) {
 
-if (empty($email) || empty($pwd)) {
+    $q1 = "SELECT * FROM `user` WHERE `email`='" . $email . "' AND `password`='" . $pwd . "'";
+    $rs1 = $conn->query($q1);
+    $n1 = $rs1->num_rows;
+    $d1 = $rs1->fetch_assoc();
+    $conn->close();
 
-    if ($n >= 1) {
+    echo $n1;
 
-        if ($checkbox == "true") {
-            setcookie("uname", $uname, time() + (60 * 60 * 24 * 30));
-            setcookie("password", $password, time() + (60 * 60 * 24 * 30));
+    if ($n1 >= 1) {
 
-            $q01 = "SELECT * FROM `admin` WHERE `username`='" . $uname . "' AND `password`='" . $password . "'";
-            $rs01 = $conn->query($q01);
-            $n01 = $rs01->num_rows;
-            $d01 = $rs01->fetch_assoc();
+        if ($chbox == "true") {
+            setcookie("email", $email, time() + (60 * 60 * 24 * 30));
+            setcookie("pwd", $pwd, time() + (60 * 60 * 24 * 30));
 
-            if (isset($_SESSION["admin"])) {
-                echo "login-suc-admin";
+            if (isset($_SESSION["user"])) {
+                echo "##01#88";
             } else {
-                $_SESSION["admin"] = $d01;
-                echo "login-suc-admin";
+                $_SESSION["user"] = $d1;
+                echo "##01#88";
             }
         } else {
-            $q01 = "SELECT * FROM `admin` WHERE `username`='" . $uname . "' AND `password`='" . $password . "'";
-            $rs01 = $conn->query($q01);
-            $n01 = $rs01->num_rows;
-            $d01 = $rs01->fetch_assoc();
 
-            if (isset($_SESSION["admin"])) {
-                echo "login-suc-admin";
+            if (isset($_SESSION["user"])) {
+                echo "##01#88";
             } else {
-                $_SESSION["admin"] = $d01;
-                echo "login-suc-admin";
+                $_SESSION["user"] = $d1;
+                echo "##01#88";
             }
         }
     } else {
-        echo "IP";
+        echo "Invalid Email or Password !";
     }
 } else {
     echo "Fill All Data !";

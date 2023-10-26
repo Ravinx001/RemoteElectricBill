@@ -178,7 +178,7 @@ if (!isset($_SESSION["user"])) {
                                     </div>
 
                                     <div class="col-6 text-end pf">
-                                        <h1><span>230.0</span> V</h1>
+                                        <h1 class="blinker"><span id="voltageUpdate"></span> V</h1>
                                     </div>
                                 </div>
 
@@ -208,7 +208,7 @@ if (!isset($_SESSION["user"])) {
                                     </div>
 
                                     <div class="col-6 text-end pf">
-                                        <h1><span>0.91</span> A</h1>
+                                        <h1 class="blinker"><span id="currentUpdate"></span> A</h1>
                                     </div>
                                 </div>
 
@@ -243,7 +243,7 @@ if (!isset($_SESSION["user"])) {
                                     </div>
 
                                     <div class="col-5 text-end pf">
-                                        <h1><span>0.002</span> kW</h1>
+                                        <h1 class="blinker"><span id="powerUpdate"></span> kW</h1>
                                     </div>
                                 </div>
 
@@ -274,7 +274,7 @@ if (!isset($_SESSION["user"])) {
                                     </div>
 
                                     <div class="col-4 text-end pf">
-                                        <h1><span>0.012</span> kWh</h1>
+                                        <h1 class="blinker"><span id="meterUpdate"></span> kWh</h1>
                                     </div>
                                 </div>
 
@@ -342,7 +342,7 @@ if (!isset($_SESSION["user"])) {
 
     <script src="https://kit.fontawesome.com/6ba34a4059.js" crossorigin="anonymous"></script>
 
-    <script src="script.admin.js"></script>
+    <script src="js/script.admin.js"></script>
 
 </body>
 

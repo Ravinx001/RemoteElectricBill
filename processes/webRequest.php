@@ -1,6 +1,6 @@
 <?php
 
-require "DB.php";
+require "db.php";
 
 if (isset($_GET["data"])) {
 
@@ -51,17 +51,19 @@ if (isset($_GET["data"])) {
         $n1 = $rs1->num_rows;
         $d1 = $rs1->fetch_assoc();
 
+        $status = 0;
         if ($n1 > 0) {
             if ($d1["usage"] >= $info["3"]) {
-                echo "Invalid power usage value sent !";
-                exit();
+                echo "Invalid power usage value sent !\n";
+                $status = 1;
             }
         }
 
-        $q2 = "INSERT INTO `meterreading` (`userId`,`dateTime`,`usage`) VALUES ('" . $_SESSION["user"]["userId"] . "',
+        if ($status == 0) {
+            $q2 = "INSERT INTO `meterreading` (`userId`,`dateTime`,`usage`) VALUES ('1',
             '" . $dateTime . "','" . $info[3] . "')";
-        $rs2 = $conn->query($q2);
-
+            $rs2 = $conn->query($q2);
+        }
 
         $q3 = "SELECT * FROM `current`";
         $rs3 = $conn->query($q3);

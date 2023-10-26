@@ -42,18 +42,37 @@
                 <!-- Pills content -->
                 <div class="tab-content pt-4">
                     <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                        <?php
+                        if (isset($_COOKIE["email"]) && isset($_COOKIE["pwd"])) {
+                        ?>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="email" value="<?php echo ($_COOKIE["email"]); ?>" class="form-control" required />
+                                <label class="form-label" for="loginName">Email or username</label>
+                            </div>
 
-                        <!-- Email input -->
-                        <div class="form-outline mb-4">
-                            <input type="email" id="email" class="form-control" required />
-                            <label class="form-label" for="loginName">Email or username</label>
-                        </div>
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="pwd" value="<?php echo ($_COOKIE["pwd"]); ?>" class="form-control" required />
+                                <label class="form-label" for="loginPassword">Password</label>
+                            </div>
+                        <?php
+                        } else {
+                        ?>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="email" class="form-control" required />
+                                <label class="form-label" for="loginName">Email or username</label>
+                            </div>
 
-                        <!-- Password input -->
-                        <div class="form-outline mb-4">
-                            <input type="password" id="pwd" class="form-control" required />
-                            <label class="form-label" for="loginPassword">Password</label>
-                        </div>
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="pwd" class="form-control" required />
+                                <label class="form-label" for="loginPassword">Password</label>
+                            </div>
+                        <?php
+                        }
+                        ?>
 
                         <!-- 2 column grid layout -->
                         <div class="row mb-4">

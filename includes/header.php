@@ -11,28 +11,21 @@
             <div class="collapse navbar-collapse ms-2 fs-5 tillium" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-3 y">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-window-fullscreen"></i> Dashborad</a>
+                        <a class="nav-link active" aria-current="page" href="home.php"><i class="bi bi-window-fullscreen"></i> Dashborad</a>
                     </li>
                     <li class="nav-item mx-3 y">
-                        <a class="nav-link" href="#"><i class="bi bi-diagram-2-fill"></i> Utilities</a>
+                        <a class="nav-link" href="utilities.php"><i class="bi bi-diagram-2-fill"></i> Utilities</a>
                     </li>
                     <li class="nav-item mx-3 y">
                         <a class="nav-link" href="#"><i class="bi bi-currency-dollar"></i> Bills</a>
                     </li>
                     <li class="nav-item dropdown ms-5 y">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="letter-spacing: 1px;">
-                            <i class="bi bi-person-badge"></i> Ravindu Amarasekara
+                            <i class="bi bi-person-badge"></i> <?php echo $_SESSION["user"]["name"]; ?>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #585858;">
                             <li>
-                                <a class="dropdown-item" href="#"><i class="bi bi-person-fill-gear me-1"></i>
-                                    Account Settings</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"><i class="bi bi-door-open-fill me-1"></i>Log out</a>
+                                <a class="dropdown-item" href="processes/destroy.php?sess=des"><i class="bi bi-door-open-fill me-1"></i>Log out</a>
                             </li>
                         </ul>
                     </li>

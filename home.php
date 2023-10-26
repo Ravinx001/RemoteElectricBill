@@ -166,19 +166,19 @@ if (!isset($_SESSION["user"])) {
 
                                 <div class="row text-start">
 
-                                    <div class="col-1 p-1">
+                                    <div class="col-1">
 
-                                        <i class="bi bi-receipt-cutoff text-info fs-1"></i>
+                                        <i class="fa-solid fa-plug text-info fs-1"></i>
 
                                     </div>
 
                                     <div class="col-5">
-                                        <h4>Average PowerUsage</h4>
-                                        <h6 class="ms-1" style="line-height: 10%;">Monthly</h6>
+                                        <h4>Voltage</h4>
+                                        <h6 class="ms-1" style="line-height: 10%;">Every 1min</h6>
                                     </div>
 
                                     <div class="col-6 text-end pf">
-                                        <h1>120 kWh/month</h1>
+                                        <h1><span>230.0</span> V</h1>
                                     </div>
                                 </div>
 
@@ -196,19 +196,19 @@ if (!isset($_SESSION["user"])) {
 
                                 <div class="row text-start">
 
-                                    <div class="col-1 p-1">
+                                    <div class="col-1">
 
-                                        <i class="bi bi-wallet2 text-info fs-1"></i>
+                                        <i class="fa-solid fa-plug-circle-bolt text-info fs-1"></i>
 
                                     </div>
 
                                     <div class="col-5">
-                                        <h2>Pending Payments </h2>
-                                        <h6 class="ms-1" style="line-height: 10%;">Monthly</h6>
+                                        <h4>Current</h4>
+                                        <h6 class="ms-1" style="line-height: 10%;">Every 1min</h6>
                                     </div>
 
                                     <div class="col-6 text-end pf">
-                                        <h1>Rs. 18,000.00</h1>
+                                        <h1><span>0.91</span> A</h1>
                                     </div>
                                 </div>
 
@@ -231,19 +231,19 @@ if (!isset($_SESSION["user"])) {
 
                                 <div class="row text-start">
 
-                                    <div class="col-1 p-1">
+                                    <div class="col-1">
 
-                                        <i class="bi bi-graph-up text-info fs-1"></i>
+                                        <i class="fa-solid fa-power-off text-info fs-1"></i>
 
                                     </div>
 
                                     <div class="col-6">
-                                        <h2>Tax Rate</h2>
-                                        <h6 class="ms-1" style="line-height: 10%;">Monthly</h6>
+                                        <h4>Power Using</h4>
+                                        <h6 class="ms-1" style="line-height: 10%;">Every 1min</h6>
                                     </div>
 
                                     <div class="col-5 text-end pf">
-                                        <h1>4.12%</h1>
+                                        <h1><span>0.002</span> kW</h1>
                                     </div>
                                 </div>
 
@@ -264,17 +264,17 @@ if (!isset($_SESSION["user"])) {
 
                                     <div class="col-1 p-1">
 
-                                        <i class="bi bi-cash-coin text-info fs-1"></i>
+                                        <i class="fa-brands fa-audible text-info fs-1"></i>
 
                                     </div>
 
                                     <div class="col-7">
-                                        <h3>Respective PowerUsage Difference</h3>
-                                        <h6 class="ms-1" style="line-height: 10%;">Monthly</h6>
+                                        <h4>Meter Reading</h4>
+                                        <h6 class="ms-1" style="line-height: 10%;">Every 1min</h6>
                                     </div>
 
                                     <div class="col-4 text-end pf">
-                                        <h1>+ 5%</h1>
+                                        <h1><span>0.012</span> kWh</h1>
                                     </div>
                                 </div>
 
@@ -339,6 +339,8 @@ if (!isset($_SESSION["user"])) {
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
+
+    <script src="https://kit.fontawesome.com/6ba34a4059.js" crossorigin="anonymous"></script>
 
     <script src="script.admin.js"></script>
 

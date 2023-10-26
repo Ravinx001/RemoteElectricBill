@@ -100,12 +100,7 @@ if (!isset($_SESSION["user"])) {
                                     </tr>
                                 </thead>
 
-                                <tbody>
-
-                                    <tr scope="row" id="wifi">
-
-
-                                    </tr>
+                                <tbody id="wifi" >
 
                                 </tbody>
                             </table>

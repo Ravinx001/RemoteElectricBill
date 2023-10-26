@@ -47,9 +47,9 @@ if (!isset($_SESSION["user"])) {
 
                                 <div class="row align-items-center mb-2 d-flex">
                                     <div class="col">
-                                        <h2 class="d-flex align-items-center mb-0">
-                                            <span class="me-5">150 kWh</span><span class="mt-3 fs-6">12.5% <i class="bi bi-arrow-up"></i></span>
-                                        </h2>
+                                        <h4 class="d-flex align-items-center mb-0">
+                                            <span class="me-5">no enough data</span><span class="mt-3 fs-6">0.00% <i class="bi bi-arrow-up"></i></span>
+                                        </h4>
                                     </div>
                                 </div>
 
@@ -76,9 +76,9 @@ if (!isset($_SESSION["user"])) {
 
                                 <div class="row align-items-center mb-2 d-flex">
                                     <div class="col">
-                                        <h2 class="d-flex align-items-center mb-0">
-                                            <span class="me-5">Rs 200.00</span><span class="mt-3 fs-6">9.23% <i class="bi bi-arrow-up"></i></span>
-                                        </h2>
+                                        <h4 class="d-flex align-items-center mb-0">
+                                            <span class="me-5">no enough data</span><span class="mt-3 fs-6">0.00% <i class="bi bi-arrow-up"></i></span>
+                                        </h4>
                                     </div>
                                 </div>
 
@@ -107,9 +107,9 @@ if (!isset($_SESSION["user"])) {
 
                                 <div class="row align-items-center mb-2 d-flex">
                                     <div class="col">
-                                        <h2 class="d-flex align-items-center mb-0">
-                                            <span class="me-5">180 kWh</span><span class="mt-3 fs-6">10.1% <i class="bi bi-arrow-up"></i></span>
-                                        </h2>
+                                        <h4 class="d-flex align-items-center mb-0">
+                                            <span class="me-5">no enough data</span><span class="mt-3 fs-6">0.00% <i class="bi bi-arrow-up"></i></span>
+                                        </h4>
                                     </div>
                                 </div>
 
@@ -135,9 +135,9 @@ if (!isset($_SESSION["user"])) {
                                 </div>
                                 <div class="row align-items-center mb-2 d-flex">
                                     <div class="col">
-                                        <h2 class="d-flex align-items-center mb-0">
-                                            <span class="me-5">Rs. 4500.00</span><span class="mt-3 fs-6">3.11% <i class="bi bi-arrow-up"></i></span>
-                                        </h2>
+                                        <h4 class="d-flex align-items-center mb-0">
+                                            <span class="me-5">no enough data</span><span class="mt-3 fs-6">0.00% <i class="bi bi-arrow-up"></i></span>
+                                        </h4>
                                     </div>
                                 </div>
                                 <div class="progress mt-1 " data-height="8" style="height: 8px;">

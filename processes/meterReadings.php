@@ -12,10 +12,14 @@ if ($n1 > 0) {
     for ($i = 0; $i < $n1; $i++) {
         $d1 = $rs1->fetch_assoc();
 ?>
-        <td><?php echo $d1["readingId"]; ?></td>
-        <td><?php echo $d1["userId"]; ?></td>
-        <td><?php echo $d1["dateTime"]; ?></td>
-        <td><?php echo $d1["usage"]; ?></td>
+
+        <tr scope="row">
+            <td><?php echo $d1["readingId"]; ?></td>
+            <td><?php echo $d1["userId"]; ?></td>
+            <td><?php echo $d1["dateTime"]; ?></td>
+            <td><?php echo $d1["usage"]; ?></td>
+        </tr>
+
 <?php
     }
 } else {

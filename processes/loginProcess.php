@@ -6,6 +6,13 @@ $email = $_POST["email"];
 $pwd = $_POST["pwd"];
 $chbox = $_POST["chbox"];
 
+// echo $email;
+// echo "-----";
+// echo $pwd;
+// echo "-----";
+// echo $chbox;
+// echo "-----";
+
 if (!empty($email) || !empty($pwd)) {
 
     $q1 = "SELECT * FROM `user` WHERE `email`='" . $email . "' AND `password`='" . $pwd . "'";
@@ -13,8 +20,6 @@ if (!empty($email) || !empty($pwd)) {
     $n1 = $rs1->num_rows;
     $d1 = $rs1->fetch_assoc();
     $conn->close();
-
-    echo $n1;
 
     if ($n1 >= 1) {
 

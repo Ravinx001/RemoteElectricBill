@@ -2,7 +2,7 @@ function login() {
 
     var email = document.getElementById("email").value;
     var pwd = document.getElementById("pwd").value;
-    var chbox = document.getElementById("chbox").value;
+    var chbox = document.getElementById("chbox").checked;
 
     var f1 = new FormData();
     f1.append("email", email);

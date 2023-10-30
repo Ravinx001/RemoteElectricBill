@@ -17,7 +17,7 @@ if ($n1 > 0) {
             <td><?php echo $d1["readingId"]; ?></td>
             <td><?php echo $d1["userId"]; ?></td>
             <td><?php echo $d1["dateTime"]; ?></td>
-            <td><?php echo $d1["usage"]; ?></td>
+            <td><?php echo $d1["usage"]; ?> kWh</td>
         </tr>
 
 <?php

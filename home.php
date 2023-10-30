@@ -42,14 +42,14 @@ if (!isset($_SESSION["user"])) {
                             <div class="cardx-statistic-3 p-4">
 
                                 <div class="mb-4">
-                                    <h5 class="cardx-title mb-0">Yesterday Power Usage <i class="bi bi-battery-charging ms-3 position-absolute opacity-25" style="font-size: 50px;"></i></h5>
+                                    <h5 class="cardx-title mb-0">Yesterday Power Usage<br/><i class="bi bi-battery-charging position-absolute opacity-25 ms-5 ps-5" style="font-size: 50px;"></i></h5>
                                 </div>
 
                                 <div class="row align-items-center mb-2 d-flex">
                                     <div class="col">
-                                        <h4 class="d-flex align-items-center mb-0">
+                                        <h6 class="d-flex align-items-center mb-0">
                                             <span class="me-5">no enough data</span><span class="mt-3 fs-6">0.00% <i class="bi bi-arrow-up"></i></span>
-                                        </h4>
+                                        </h6>
                                     </div>
                                 </div>
 
@@ -71,14 +71,14 @@ if (!isset($_SESSION["user"])) {
                             <div class="cardx-statistic-3 p-4">
 
                                 <div class="mb-4">
-                                    <h5 class="card-title mb-0">Cost for Yesterday<i class="bi bi-currency-dollar ms-2 position-absolute opacity-25" style="font-size: 50px;"></i></h5>
+                                    <h5 class="card-title mb-0">Cost for Yesterday<br/><i class="bi bi-currency-dollar position-absolute opacity-25 ms-5 ps-5" style="font-size: 50px;"></i></h5>
                                 </div>
 
                                 <div class="row align-items-center mb-2 d-flex">
                                     <div class="col">
-                                        <h4 class="d-flex align-items-center mb-0">
+                                        <h6 class="d-flex align-items-center mb-0">
                                             <span class="me-5">no enough data</span><span class="mt-3 fs-6">0.00% <i class="bi bi-arrow-up"></i></span>
-                                        </h4>
+                                        </h6>
                                     </div>
                                 </div>
 
@@ -100,16 +100,15 @@ if (!isset($_SESSION["user"])) {
                             <div class="cardx-statistic-3 p-4">
 
                                 <div class="mb-4">
-                                    <h5 class="cardx-title mb-0">Last Month Power Usage
-                                        <i class="bi bi-view-list ms-3 position-absolute opacity-25" style="font-size: 50px;"></i>
+                                    <h5 class="cardx-title mb-0">Last Month Power Usage<br/><i class="bi bi-view-list position-absolute opacity-25 ms-5 ps-5" style="font-size: 50px;"></i>
                                     </h5>
                                 </div>
 
                                 <div class="row align-items-center mb-2 d-flex">
                                     <div class="col">
-                                        <h4 class="d-flex align-items-center mb-0">
+                                        <h6 class="d-flex align-items-center mb-0">
                                             <span class="me-5">no enough data</span><span class="mt-3 fs-6">0.00% <i class="bi bi-arrow-up"></i></span>
-                                        </h4>
+                                        </h6>
                                     </div>
                                 </div>
 
@@ -131,13 +130,13 @@ if (!isset($_SESSION["user"])) {
                             <div class="cardx-statistic-3 p-4">
 
                                 <div class="mb-4">
-                                    <h5 class="cardx-title mb-0">Last Month Cost<i class="bi bi-currency-dollar ms-2 position-absolute opacity-25" style="font-size: 50px;"></i></h5>
+                                    <h5 class="cardx-title mb-0">Last Month Cost<br/><i class="bi bi-currency-dollar position-absolute opacity-25 ms-5 ps-5" style="font-size: 50px;"></i></h5>
                                 </div>
                                 <div class="row align-items-center mb-2 d-flex">
                                     <div class="col">
-                                        <h4 class="d-flex align-items-center mb-0">
+                                        <h6 class="d-flex align-items-center mb-0">
                                             <span class="me-5">no enough data</span><span class="mt-3 fs-6">0.00% <i class="bi bi-arrow-up"></i></span>
-                                        </h4>
+                                        </h6>
                                     </div>
                                 </div>
                                 <div class="progress mt-1 " data-height="8" style="height: 8px;">
@@ -164,20 +163,24 @@ if (!isset($_SESSION["user"])) {
 
                             <div class="card-body">
 
-                                <div class="row text-start">
+                                <div class="d-flex flex-row justify-content-between">
 
-                                    <div class="col-1">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <i class="fa-solid fa-plug text-info fs-1"></i>
+                                            </div>
+                                            <div class="col">
+                                                <h4>Voltage</h4>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <i class="fa-solid fa-plug text-info fs-1"></i>
+                                    <div>
 
                                     </div>
 
-                                    <div class="col-5">
-                                        <h4>Voltage</h4>
-                                        <h6 class="ms-1" style="line-height: 10%;">Every 1min</h6>
-                                    </div>
-
-                                    <div class="col-6 text-end pf">
+                                    <div class="pf">
                                         <h1 class="blinker"><span id="voltageUpdate"></span> V</h1>
                                     </div>
                                 </div>
@@ -188,26 +191,31 @@ if (!isset($_SESSION["user"])) {
 
                     </div>
 
+
                     <div class="col-xl-6 col-md-12">
 
                         <div class="card text-white card-bg border border-info border-2 m-1">
 
                             <div class="card-body">
 
-                                <div class="row text-start">
+                                <div class="d-flex flex-row justify-content-between">
 
-                                    <div class="col-1">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <i class="fa-solid fa-plug-circle-bolt text-info fs-1"></i>
+                                            </div>
+                                            <div class="col">
+                                                <h4>Current</h4>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <i class="fa-solid fa-plug-circle-bolt text-info fs-1"></i>
+                                    <div>
 
                                     </div>
 
-                                    <div class="col-5">
-                                        <h4>Current</h4>
-                                        <h6 class="ms-1" style="line-height: 10%;">Every 1min</h6>
-                                    </div>
-
-                                    <div class="col-6 text-end pf">
+                                    <div class="pf">
                                         <h1 class="blinker"><span id="currentUpdate"></span> A</h1>
                                     </div>
                                 </div>
@@ -216,11 +224,12 @@ if (!isset($_SESSION["user"])) {
 
                         </div>
 
-
                     </div>
+
 
                 </div>
 
+                
                 <div class="row">
 
                     <div class="col-xl-6 col-md-12">
@@ -229,20 +238,24 @@ if (!isset($_SESSION["user"])) {
 
                             <div class="card-body">
 
-                                <div class="row text-start">
+                                <div class="d-flex flex-row justify-content-between">
 
-                                    <div class="col-1">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <i class="fa-solid fa-power-off text-info fs-1"></i>
+                                            </div>
+                                            <div class="col">
+                                                <h4>Power</h4>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <i class="fa-solid fa-power-off text-info fs-1"></i>
+                                    <div>
 
                                     </div>
 
-                                    <div class="col-6">
-                                        <h4>Power Using</h4>
-                                        <h6 class="ms-1" style="line-height: 10%;">Every 1min</h6>
-                                    </div>
-
-                                    <div class="col-5 text-end pf">
+                                    <div class="pf">
                                         <h1 class="blinker"><span id="powerUpdate"></span> kW</h1>
                                     </div>
                                 </div>
@@ -251,8 +264,8 @@ if (!isset($_SESSION["user"])) {
 
                         </div>
 
-
                     </div>
+
 
                     <div class="col-xl-6 col-md-12">
 
@@ -260,20 +273,24 @@ if (!isset($_SESSION["user"])) {
 
                             <div class="card-body">
 
-                                <div class="row text-start">
+                                <div class="d-flex flex-row justify-content-between">
 
-                                    <div class="col-1 p-1">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <i class="fa-brands fa-audible text-info fs-1"></i>
+                                            </div>
+                                            <div class="col">
+                                                <h4>Meter</h4>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <i class="fa-brands fa-audible text-info fs-1"></i>
+                                    <div>
 
                                     </div>
 
-                                    <div class="col-7">
-                                        <h4>Meter Reading</h4>
-                                        <h6 class="ms-1" style="line-height: 10%;">Every 1min</h6>
-                                    </div>
-
-                                    <div class="col-4 text-end pf">
+                                    <div class="pf">
                                         <h1 class="blinker"><span id="meterUpdate"></span> kWh</h1>
                                     </div>
                                 </div>
@@ -284,11 +301,15 @@ if (!isset($_SESSION["user"])) {
 
                     </div>
 
+
                 </div>
 
             </div>
 
         </div>
+
+
+
 
         <div class="row my-5 justify-content-center">
 

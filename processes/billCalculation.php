@@ -69,7 +69,7 @@ if ($usage <= 30) {
     $cost = (32 * 60) + (35 * 30) + (900 * 50) + ($usage - 990) * 75 + 2500;
 }
 
-$tax = round(($cost * 2.565) / 100, 2);
-$totalCost = round($cost  + $tax, 2);
+$tax = round(($cost * 2.565) / 100, 3);
+$totalCost = round($cost  + $tax, 3);
 
 echo $totalCost . "," . $tax . "," . $d3["usage"]."," . $d3["dateTime"];

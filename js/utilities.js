@@ -41,5 +41,25 @@ function wifi() {
 
 }
 
+function visitors() {
+
+    var f2 = new FormData();
+
+    var r2 = new XMLHttpRequest();
+
+    r2.onreadystatechange = function () {
+        if (r2.readyState == 4 && r2.status == 200) {
+            var t2 = r2.responseText;
+
+            document.getElementById("visitors").innerHTML = t2;
+
+        }
+    }
+
+    r2.open("POST", "processes/visitors.php", true);
+    r2.send(f2);
+
+}
+
 setInterval(readings, 5000);
 setInterval(wifi, 5000);

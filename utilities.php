@@ -57,7 +57,7 @@ if (!isset($_SESSION["user"])) {
                                     </tr>
                                 </thead>
 
-                                <tbody  id="readings" >
+                                <tbody id="readings">
 
                                 </tbody>
                             </table>
@@ -95,7 +95,7 @@ if (!isset($_SESSION["user"])) {
                                     </tr>
                                 </thead>
 
-                                <tbody id="wifi" >
+                                <tbody id="wifi">
 
                                 </tbody>
                             </table>
@@ -107,12 +107,76 @@ if (!isset($_SESSION["user"])) {
 
         </div>
 
+        <?php
+
+        if ($_SESSION["user"]["email"] == "rav.normal@gmail.com") {
+
+        ?>
+
+            <div class="content mt-5">
+
+                <div class="container-fluid">
+
+                    <div class="row mt-3 mb-2">
+                        <div class="col p-1 rounded-4 text-center bg-dark bg-opacity-75">
+                            <h2 class="pf text-info" style="text-shadow: 5px 5px 5px rgba(82, 75, 75, 0.651);">
+                                Visitors </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col bg-dark bg-opacity-75 rounded-3 p-2">
+                            <div class="table-responsive" style="overflow-y: scroll; max-height: 350px;">
+
+                                <table class="table table-dark table-striped">
+
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Visitor Id</th>
+                                            <th scope="col">IP Address</th>
+                                            <th scope="col">Device</th>
+                                            <th scope="col">OS</th>
+                                            <th scope="col">Browser</th>
+                                            <th scope="col">First Visited Date & Time</th>
+                                            <th scope="col">Last Visited Date & Time</th>
+                                            <th scope="col">Total Visits</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody id="visitors">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        <?php
+        }
+
+        ?>
+
     </main>
 
     <script src="js/utilities.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
+    <?php
+    if ($_SESSION["user"]["email"] == "rav.normal@gmail.com") {
+    ?>
+        <script>
+            visitors();
+            setInterval(visitors, 5000);
+        </script>
+
+    <?php
+    }
+    ?>
 
 </body>
 

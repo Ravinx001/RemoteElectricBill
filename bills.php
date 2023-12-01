@@ -37,7 +37,7 @@ if (!isset($_SESSION["user"])) {
                 <div class="row mt-3 mb-2">
                     <div class="col p-1 rounded-4 text-center bg-dark bg-opacity-75">
                         <h2 class="pf text-info" style="text-shadow: 5px 5px 5px rgba(82, 75, 75, 0.651);">
-                            Calculating Bill Cost </h2>
+                            Calculating Bill </h2>
                     </div>
                 </div>
 

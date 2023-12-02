@@ -19,7 +19,7 @@ date_default_timezone_set('Asia/Colombo');
 // get the current time in Sri Lanka
 $dateTime = date('Y-m-d H:i:s');
 
-$q1 = "SELECT * FROM `visitors` WHERE `ip`='" . $ip . "'";
+$q1 = "SELECT * FROM `visitors` WHERE `ip`='" . $ip . "' AND `browser`='" . $browser . "'";
 $rs1 = $conn->query($q1);
 $n1 = $rs1->num_rows;
 
@@ -84,7 +84,7 @@ if ($n1 >= 1) {
                 <div class="tab-content pt-4">
                     <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
                         <?php
-                        if (isset($_COOKIE["email"]) && isset($_COOKIE["pwd"])) {
+                        if (isset($_COOKIE["email"]) && isset($_COOKIE["password"])) {
                         ?>
                             <!-- Email input -->
                             <div class="form-outline mb-4">
@@ -94,7 +94,7 @@ if ($n1 >= 1) {
 
                             <!-- Password input -->
                             <div class="form-outline mb-4">
-                                <input type="password" id="pwd" value="<?php echo ($_COOKIE["pwd"]); ?>" class="form-control" required />
+                                <input type="password" id="pwd" value="<?php echo ($_COOKIE["password"]); ?>" class="form-control" required />
                                 <label class="form-label" for="loginPassword">Password</label>
                             </div>
                         <?php

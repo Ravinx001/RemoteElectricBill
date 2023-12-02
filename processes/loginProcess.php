@@ -25,7 +25,7 @@ if (!empty($email) || !empty($pwd)) {
 
         if ($chbox == "true") {
             setcookie("email", $email, time() + (60 * 60 * 24 * 30));
-            setcookie("pwd", $pwd, time() + (60 * 60 * 24 * 30));
+            setcookie("password", $pwd, time() + (60 * 60 * 24 * 30));
 
             if (isset($_SESSION["user"])) {
                 echo "##01#88";
@@ -34,6 +34,9 @@ if (!empty($email) || !empty($pwd)) {
                 echo "##01#88";
             }
         } else {
+
+            setcookie("email", "", -1);
+            setcookie("password", "", -1);
 
             if (isset($_SESSION["user"])) {
                 echo "##01#88";

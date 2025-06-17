@@ -2,28 +2,28 @@
 #include <ESP8266HTTPClient.h>
 #include <WiFiClient.h>
 
-const char* ssid = "Your Wifi Name";
-const char* password = "Your Wifi Password";
+const char* ssid = "Your Wifi Router SSID";
+const char* password = "Your Wifi Router Password";
 
 //Your Domain name with URL path or IP address with path
-String serverName = "http://Your Web Url";  //web url
+String serverName = "http://Your Web Url/processes/webRequest.php";  //web url
 String data;
 int wifiled = D5;
 int webled = D6;
 
 void setup() {
-  Serial.begin(115200);      
+  Serial.begin(115200);
   pinMode(wifiled, OUTPUT);
   pinMode(webled, OUTPUT);
 
   WiFi.begin(ssid, password);
   Serial.println("Connecting");
-  while (WiFi.status() != WL_CONNECTED) { //wifi connection eka start krnne
+  while (WiFi.status() != WL_CONNECTED) {  //wifi connection eka start krnne
     delay(500);
     Serial.print(".");
   }
   Serial.println("");
-  Serial.print("Connected to WiFi network with IP Address: "); // connect una ip address showing
+  Serial.print("Connected to WiFi network with IP Address: ");  // connect una ip address showing
   Serial.println(WiFi.localIP());
   digitalWrite(wifiled, HIGH);
 
@@ -50,7 +50,7 @@ void loop() {
       Serial.println("data String length = " + length);
     } else {
       Serial.println(data);
-      loopOne(); // calle the loop req yqna eka
+      loopOne();  // calle the loop req yqna eka
     }
 
     length = 0;
@@ -74,14 +74,16 @@ void loopOne() {
     previousMillisOne = currentMillis;
 
     //Check WiFi connection status
-    if (WiFi.status() == WL_CONNECTED) { // checking connectivity of wifi
+    if (WiFi.status() == WL_CONNECTED) {  // checking connectivity of wifi
       WiFiClient client;
       HTTPClient http;
 
-      String serverPath = serverName + "?data=" + data; // bining theata for url
+      String serverPath = serverName + "?data=" + data;  // bining theata for url
 
       // Your Domain name with URL path or IP address with path
       http.begin(client, serverPath.c_str());
+
+      Serial.println(serverPath.c_str());
 
       // If you need Node-RED/server authentication, insert user and password below
       //http.setAuthorization("REPLACE_WITH_SERVER_USERNAME", "REPLACE_WITH_SERVER_PASSWORD");
@@ -129,8 +131,6 @@ void loopTwo() {
     digitalWrite(webled, HIGH);
     delay(500);
     digitalWrite(webled, LOW);
-  
-
   }
 
   //

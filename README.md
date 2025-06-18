@@ -190,7 +190,7 @@ This project is licensed under the  Apache License 2.0 - see the [LICENSE](./LIC
 
 <div align="center">
   
-  ### 🌟 **Join us in shaping the future of energy management—where every kilowatt-hour counts!** 🌟
+  ### 🌟 **Join us in shaping the future of energy management 🌟 <br> 🌟 where every kilowatt-hour counts !** 🌟
   
   ⭐ **Star this repository if you found it helpful!** ⭐
   

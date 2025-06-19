@@ -1,6 +1,5 @@
-# ⚡ Remote Electricity Bill Calculator 
-
 <div align="center">
+  # ⚡ Remote Electricity Bill Calculator 
   
   ### 🌐 IOT-Based Real-Time Electricity Billing and Visualization System
   

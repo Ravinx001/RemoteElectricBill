@@ -1,4 +1,4 @@
-# ⚡ RemoteElectricBill
+# ⚡ Remote Electricity Bill Calculator 
 
 <div align="center">
   

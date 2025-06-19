@@ -17,7 +17,7 @@
 
 ## 🎯 Project Overview
 
-**RemoteElectricBill** is an innovative IoT-based solution designed to revolutionize electricity billing and consumption monitoring. By integrating smart hardware and intelligent software, this project automates the entire billing process, delivers real-time usage insights, and empowers both consumers and utility providers with actionable data—all through a secure, user-friendly web interface.
+**Remote Electricity Bill Calculator** is an innovative IoT-based solution designed to revolutionize electricity billing and consumption monitoring. By integrating smart hardware and intelligent software, this project automates the entire billing process, delivers real-time usage insights, and empowers both consumers and utility providers with actionable data—all through a secure, user-friendly web interface.
 
 <div align="center">
   <img src="https://github.com/Ravinx001/RemoteElectricBill/blob/main/img/project/inner-view.png?raw=true" alt="RemoteElectricBill Inner View" width="45%">

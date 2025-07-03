@@ -156,7 +156,7 @@ Rising energy costs, complex billing structures, and the push for sustainability
 
 ## 📚 Documentation
 
-For a detailed explanation of the system architecture, implementation, and results, see the **[Thesis.pdf](./docs/Thesis.pdf))** in this repository.
+For a detailed explanation of the system architecture, implementation, and results, see the **[Thesis.pdf](./docs/Thesis.pdf)** in this repository.
 
 ---
 
